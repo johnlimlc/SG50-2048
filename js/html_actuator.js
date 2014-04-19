@@ -133,6 +133,11 @@ HTMLActuator.prototype.updateScore = function (score) {
     popMessage.setAttribute('style', styleString);
 
     this.encourageContainer.appendChild(popMessage);
+
+    var instance = createjs.Sound.play("sound" + difference);
+    if (instance == null || instance.playState == createjs.Sound.PLAY_FAILED) {
+      createjs.Sound.play("sound0");
+    }  
   }
 };
 

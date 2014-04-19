@@ -56,6 +56,30 @@ GameManager.prototype.setup = function () {
 
   // Update the actuator
   this.actuate();
+
+  // Setup SoundJS
+  if (!createjs.Sound.initializeDefaultPlugins()) {return;}
+  var audioPath = "snd/mp3/";
+  var manifest = [
+    {id:"sound0", src:"sound0.mp3"},
+    {id:"sound2", src:"sound2.mp3"},
+    {id:"sound4", src:"sound4.mp3"},
+    {id:"sound8", src:"sound8.mp3"},
+    {id:"sound16", src:"sound16.mp3"},
+    {id:"sound32", src:"sound32.mp3"},
+    {id:"sound64", src:"sound64.mp3"},
+    {id:"sound128", src:"sound128.mp3"},
+    {id:"sound256", src:"sound256.mp3"},
+    {id:"sound512", src:"sound512.mp3"},
+    {id:"sound1024", src:"sound1024.mp3"},
+    {id:"sound2048", src:"sound2048.mp3"},
+    {id:"musicEnd", src:"musicEnd.mp3"}
+  ];
+ 
+  createjs.Sound.alternateExtensions = ["mp3"];
+  var loadProxy = createjs.proxy(this.handleLoad, this);
+  createjs.Sound.addEventListener("fileload", loadProxy);
+  createjs.Sound.registerManifest(manifest, audioPath);
 };
 
 // Set up the initial tiles to start the game with
@@ -184,6 +208,7 @@ GameManager.prototype.move = function (direction) {
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
+      createjs.Sound.play("musicEnd");
     }
 
     this.actuate();

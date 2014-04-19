@@ -5,7 +5,6 @@
   <title>長城2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link href="style/leanbackPlayer.default.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
@@ -76,18 +75,6 @@
       </div>
     </div>
 
-    <div class="leanback-player-audio" width="350px">
-      <audio preload="auto" autoplay loop controls>
-        <source src="snd/mp3/loop.mp3" type='audio/mpeg; codecs="vorbis"'/>
-        <div class="leanback-player-html-fallback">
-          <div>
-            <strong> Download Audio:</strong>
-            <a href="https://raw.githubusercontent.com/johnlimlc/CC-2048/gh-pages/snd/mp3/loop.mp3">.mp3</a>
-          </div>
-        </div>
-      </audio>
-    </div>
-
     <p class="game-explanation">
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong> Once you have achieved the magic number <strong>2048</strong>, remember to take a picture of yourself together with your achievement and leave a message with your contact on our <a href="http://www.facebook.com/changcheng.sg" target="_blank">facebook</a>! We will send you a mystery prize!
     </p>
@@ -115,7 +102,6 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-  <script src="js/leanbackPlayer.pack.js"></script>
-  <script src="js/leanbackPlayer.en.js"></script>
+  <script src="js/soundjs-0.5.2.min.js"></script>
 </body>
 </html>
