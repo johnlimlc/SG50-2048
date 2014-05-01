@@ -5,6 +5,7 @@
   <title>長城2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="style/about.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
@@ -27,7 +28,7 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <a class="info-button">Game Info</a>
       <a class="restart-button">New Game</a>
     </div>
 
@@ -35,8 +36,10 @@
       <div class="game-message">
         <p></p>
         <div class="lower">
+          <div id="about-box"></div>
+          <a class="continue-button">Continue</a>
 	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
+          <a class="retry-button">All over again</a>
         </div>
       </div>
 
@@ -73,25 +76,15 @@
       <div class="encourage-message">
         <p></p>
       </div>
+
     </div>
 
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong> Once you have achieved the magic number <strong>2048</strong>, remember to take a picture of yourself together with your achievement and leave a message with your contact on our <a href="http://www.facebook.com/changcheng.sg" target="_blank">facebook</a>! We will send you a mystery prize!
-    </p>
-    <hr>
-    <p>
-    Enhanced by <a href="http://www.facebook.com/johnlimlc" target="_blank">John Lim</a> specially for <a href="http://changcheng.com.sg" target"_blank">長城集团 Chang Cheng Group.</a>
-    </p>
-    <p><small>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a></small>
-    </p>
-    <hr>
-    <p><small>
-    <strong class="important">Note:</strong> This site is the official version of 長城<sub>2048</sub>. You can play it on your phone via <a href="http://goo.gl/UA6SRv">http://goo.gl/UA6SRv.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
-    </small>
-    </p>
   </div>
 
+  <script src="js/soundjs-0.5.2.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.titlesequence.js"></script>
+  <script src="js/about.js"></script>
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
@@ -102,6 +95,5 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-  <script src="js/soundjs-0.5.2.min.js"></script>
 </body>
 </html>

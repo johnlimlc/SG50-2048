@@ -3,7 +3,7 @@ function HTMLActuator() {
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
-  this.encourageContainer = document.querySelector(".encourage-message");
+  this.popMsgContainer  = document.querySelector(".encourage-message");
 
   this.score = 0;
 }
@@ -109,7 +109,7 @@ HTMLActuator.prototype.positionClass = function (position) {
 
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
-  this.clearContainer(this.encourageContainer);  
+  this.clearContainer(this.popMsgContainer);  
 
   var difference = score - this.score;
   this.score = score;
@@ -132,7 +132,7 @@ HTMLActuator.prototype.updateScore = function (score) {
     var styleString = left + top + color
     popMessage.setAttribute('style', styleString);
 
-    this.encourageContainer.appendChild(popMessage);
+    this.popMsgContainer.appendChild(popMessage);
 
     var instance = createjs.Sound.play("sound" + difference);
     if (instance == null || instance.playState == createjs.Sound.PLAY_FAILED) {
@@ -145,9 +145,15 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
 };
 
+HTMLActuator.prototype.info = function () {
+  this.messageContainer.classList.add("game-info");
+  this.messageContainer.getElementsByTagName("p")[0].textContent = "Game Info";
+  $('#about-box').css({ 'display': 'block' });
+};
+
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Congratulations! You win! Take a photo of yourself together with your achievement and post it on our facebook now!" : "Game over!";
+  var message = won ? "Congratulations! You win!" : "Game over!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
@@ -157,4 +163,6 @@ HTMLActuator.prototype.clearMessage = function () {
   // IE only takes one value to remove at a time.
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
+  this.messageContainer.classList.remove("game-info");
+  $('#about-box').css({ 'display': 'none' });
 };

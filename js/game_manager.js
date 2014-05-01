@@ -7,11 +7,19 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.startTiles     = 2;
 
   this.inputManager.on("move", this.move.bind(this));
+  this.inputManager.on("info", this.info.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
 
   this.setup();
 }
+
+// Game Info
+GameManager.prototype.info = function () {
+  createjs.Sound.stop();
+  createjs.Sound.play("musicEnd");
+  this.actuator.info(); // Display game info message
+};
 
 // Restart the game
 GameManager.prototype.restart = function () {
@@ -80,6 +88,7 @@ GameManager.prototype.setup = function () {
   var loadProxy = createjs.proxy(this.handleLoad, this);
   createjs.Sound.addEventListener("fileload", loadProxy);
   createjs.Sound.registerManifest(manifest, audioPath);
+  createjs.Sound.stop();
 };
 
 // Set up the initial tiles to start the game with

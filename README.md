@@ -14,7 +14,7 @@ Many thanks to [UDACITY](https://www.udacity.com/) for teaching me the course on
 ### Screenshot
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/johnlimlc/CC-2048/gh-pages/screen.jpg" alt="Screenshot"/>
+  <img src="https://raw.githubusercontent.com/johnlimlc/CC-2048/gh-pages/screen.png" alt="Screenshot"/>
 </p>
 
 That screenshot is real, by the way. I have not reached 2048 :smile:

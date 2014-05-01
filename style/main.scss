@@ -229,6 +229,10 @@ hr {
 	&.keep-playing-button {
 	  display: none;
 	}
+
+  &.continue-button {
+    display: none;
+  }
       }
 
       @include animation(fade-in 800ms ease $transition-speed * 12);
@@ -241,9 +245,13 @@ hr {
 	a.keep-playing-button {
 	  display: inline-block;
 	}
+
+  a.continue-button {
+    display: inline-block;
+  }
       }
 
-      &.game-won, &.game-over {
+      &.game-won, &.game-over, &.game-info {
         display: block;
       }
     }
@@ -455,10 +463,11 @@ hr {
   @include clearfix;
 }
 
-.game-intro {
-  float: left;
-  line-height: 42px;
-  margin-bottom: 0;
+.info-button {
+  @include button;
+  display: block;
+  text-align: center;
+  float: right;
 }
 
 .restart-button {
@@ -510,12 +519,13 @@ hr {
     margin-bottom: 10px;
   }
 
-  // Show intro and restart button side by side
-  .game-intro {
-    width: 55%;
+  // Show info and restart button side by side
+  .info-button {
+    width: 42%;
+    padding: 0;
     display: block;
     box-sizing: border-box;
-    line-height: 1.65;
+    margin-top: 2px;
   }
 
   .restart-button {
@@ -546,4 +556,5 @@ hr {
       margin-top: 30px !important;
     }
   }
+
 }
