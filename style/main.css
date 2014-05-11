@@ -598,7 +598,6 @@ hr {
   text-decoration: none;
   height: 40px;
   line-height: 42px;
-  display: block;
   text-align: center;
   float: right; }
 
@@ -608,9 +607,8 @@ hr {
   text-decoration: none;
   height: 40px;
   line-height: 42px;
-  display: block;
   text-align: center;
-  float: right; }
+  float: left; }
 
 .game-explanation {
   margin-top: 50px; }
