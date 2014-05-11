@@ -566,28 +566,6 @@ hr {
   display: block;
   clear: both; }
 
-.share-button {
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  height: 40px;
-  line-height: 42px;
-  display: block;
-  text-align: center;
-  float: right; }
-
-.donate-button {
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  height: 40px;
-  line-height: 42px;
-  display: block;
-  text-align: center;
-  float: right; }
-
 .info-button {
   display: inline-block;
   background: #8f7a66;
@@ -608,6 +586,16 @@ hr {
   padding: 0 20px;
   text-decoration: none;
   color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right; }
+
+.share-button {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -641,29 +629,22 @@ hr {
   .heading {
     margin-bottom: 10px; }
 
-  .share-button {
-    width: 25%;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
-
-  .donate-button {
-    width: 25%;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
-
   .info-button {
-    width: 25%;
+    width: 33%;
     padding: 0;
     display: block;
     box-sizing: border-box;
     margin-top: 2px; }
 
   .restart-button {
-    width: 25%;
+    width: 33%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }
+
+  .share-button {
+    width: 33%;
     padding: 0;
     display: block;
     box-sizing: border-box;
