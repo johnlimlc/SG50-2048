@@ -20,7 +20,7 @@ Many thanks to [UDACITY](https://www.udacity.com/) for teaching me the course on
 That screenshot is real, by the way. I have not reached 2048 :smile:
 
 ## Contributing
-If you like what you are playing and would like me to create one similar for your company or personal usage, feel free to buy me coffe and drop me an email; I would gladly create one specially for you!
+If you like what you are playing and would like me to create one similar for your company or personal usage, feel free to buy me coffee and drop me an email; I would gladly teach you or create one specially for you!
 
 ## License
 2048 is licensed under the [MIT license.](https://github.com/johnlimlc/CC-2048/blob/master/LICENSE.txt)

@@ -246,6 +246,7 @@ var sequence = [
 
     function(seq) {
         seq.next_cue();
+        $('#about-box').css({ 'background-color': '#eeeeee' });
         $('#about-box').empty().titleSequence(sequence);
     }
 

@@ -91,6 +91,11 @@ GameManager.prototype.setup = function () {
   createjs.Sound.stop();
 };
 
+// Do something with the loaded sound
+GameManager.prototype.handleLoad = function (event) {
+  // Do something with the loaded sound
+};
+
 // Set up the initial tiles to start the game with
 GameManager.prototype.addStartTiles = function () {
   for (var i = 0; i < this.startTiles; i++) {
