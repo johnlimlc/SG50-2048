@@ -566,6 +566,15 @@ hr {
   display: block;
   clear: both; }
 
+.donate-button {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 42px;
+  text-align: center;
+  float: right; }
+
 .info-button {
   display: inline-block;
   background: #8f7a66;
@@ -578,6 +587,15 @@ hr {
   display: block;
   text-align: center;
   float: right; }
+
+.share-button {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 42px;
+  text-align: center;
+  float: left; }
 
 .restart-button {
   display: inline-block;
@@ -593,15 +611,6 @@ hr {
   float: right; }
 
 .like-button {
-  display: inline-block;
-  border-radius: 3px;
-  text-decoration: none;
-  height: 40px;
-  line-height: 42px;
-  text-align: center;
-  float: right; }
-
-.share-button {
   display: inline-block;
   border-radius: 3px;
   text-decoration: none;
@@ -637,7 +646,21 @@ hr {
   .heading {
     margin-bottom: 10px; }
 
+  .donate-button {
+    width: 20%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }
+
   .info-button {
+    width: 20%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }
+
+  .share-button {
     width: 20%;
     padding: 0;
     display: block;
@@ -652,13 +675,6 @@ hr {
     margin-top: 2px; }
 
   .like-button {
-    width: 30%;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
-
-  .share-button {
     width: 20%;
     padding: 0;
     display: block;
