@@ -31,7 +31,7 @@ var sequence = [
     {
         container: '#instructions',
         content: 'How to play:',
-        css: { left: '0px', top: '16px' },
+        css: { left: '0px', top: '16px', color: '#f5510a' },
     },
 
     {
@@ -44,7 +44,7 @@ var sequence = [
     {
         container: '#instructions',
         content: 'Use your arrow keys to move the tiles.',
-        css: { left: '0px', top: '72px', opacity: 0 },
+        css: { left: '0px', top: '52px', opacity: 0 },
         animate: { opacity: 1 },
         duration: 1200,
         pause: 500
@@ -53,7 +53,7 @@ var sequence = [
     {
         container: '#instructions',
         content: 'When two tiles with the same number touch',
-        css: { left: '0px', top: '110px', opacity: 0 },
+        css: { left: '0px', top: '90px', opacity: 0 },
         animate: { opacity: 1 },
         duration: 1200,
         pause: 500
@@ -62,7 +62,7 @@ var sequence = [
     {
         container: '#instructions',
         content: 'they merge into one!',
-        css: { left: '0px', top: '138px', opacity: 0 },
+        css: { left: '0px', top: '118px', opacity: 0 },
         animate: { opacity: 1 },
         duration: 1200,
         pause: 500
@@ -71,7 +71,7 @@ var sequence = [
     {
         container: '#instructions',
         content: 'Join the numbers and get to the <big>2048</big> tile!',
-        css: { left: '0px', top: '176px', opacity: 0 },
+        css: { left: '0px', top: '156px', opacity: 0 },
         animate: { opacity: 1 },
         duration: 1200,
         pause: 500
@@ -105,7 +105,7 @@ var sequence = [
     {
         content: '',
         id: 'achievements',
-        css: { height: '160px' },
+        css: { height: '180px' },
         pause: 800
     },
 
@@ -120,7 +120,7 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: 'Take a picture of yourself together with your achievement',
+        content: 'Take a picture of yourself and your achievement',
         css: { left: '150px', top: '56px', color: '#0d8d10' },
         animate: { left: 0 },
         duration: 900,
@@ -129,7 +129,7 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: 'And leave a message with your contact on our <a href="http://www.facebook.com/changcheng.sg" target="_blank">facebook</a>',
+        content: 'And post a message with your contact on our',
         css: { left: '-150px', top: '90px', color: '#0050ff' },
         animate: { left: 0 },
         duration: 900,
@@ -138,8 +138,17 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: 'We will send you a mystery prize!',
-        css: { left: '180px', top: '144px', color: '#f00f0f' },
+        content: '<a href="http://www.facebook.com/changcheng.sg" target="_blank">facebook</a>',
+        css: { left: '-150px', top: '110px', color: '#0050ff' },
+        animate: { left: 0 },
+        duration: 900,
+        no_wait: true
+    },
+
+    {
+        container: '#achievements',
+        content: 'And we will send you a mystery gift!',
+        css: { left: '180px', top: '154px', color: '#f00f0f' },
         animate: { left: 0 },
         duration: 900,
         pause: 10000
@@ -198,7 +207,7 @@ var sequence = [
     {
         container: '#challenge',
         content: "Ready",
-        css: { left: '108px', top: '86px', 'font-family': '"Courier New", monospace', 'font-size': '40px', 'font-weight': 'normal', opacity: 0 },
+        css: { left: '80px', top: '86px', 'font-family': '"Courier New", monospace', 'font-size': '40px', 'font-weight': 'normal', opacity: 0 },
         animate: { opacity: 1 },
         duration: 100,
         pause: 600
@@ -207,7 +216,7 @@ var sequence = [
     {
         container: '#challenge',
         content: "for the Challenge?",
-        css: { left: '8px', top: '110px', 'font-family': '"Arial Black", sans-serif', 'font-size': '40px', 'font-weight': 'bold' },
+        css: { left: '0px', top: '120px', 'font-family': '"Arial Black", sans-serif', 'font-size': '25px', 'font-weight': 'bold' },
         animate: { opacity: 1 },
         duration: 100,
         pause: 600
@@ -223,7 +232,7 @@ var sequence = [
     {
         content: '',
         id: 'snapshot',
-        css: {width: '200px', height: '200px', top: '-200px', left: '100px', opacity: 0 },
+        css: {width: '200px', height: '200px', top: '-200px', left: '10px', opacity: 0 },
         animate: {opacity: 1},
         duration: 500
     },

@@ -16,7 +16,7 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -55,8 +55,8 @@ h1.title {
   display: inline-block;
   background: #bbada0;
   padding: 15px 25px;
-  font-size: 25px;
-  height: 25px;
+  font-size: 20px;
+  height: 20px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
@@ -123,6 +123,9 @@ h1.title {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
+    @media screen and (max-width: 520px) {
+      .encourage-message .score-addition {
+        font-size: 33%; } }
 
 p {
   margin-top: 0;
@@ -355,68 +358,96 @@ hr {
     color: #000000;
     background: url('../tile-sets/logo/logo2.png');
     background-size: cover;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+    font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-inner {
+        font-size: 100%; } }
   .tile.tile-4 .tile-inner {
     color: #0000ff;
     background: url('../tile-sets/logo/logo4.png');
     background-size: cover;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+    font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-4 .tile-inner {
+        font-size: 100%; } }
   .tile.tile-8 .tile-inner {
+    color: #008000;
     background: url('../tile-sets/logo/logo8.png');
     background-size: cover;
-    color: #008000; }
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+    font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-8 .tile-inner {
+        font-size: 100%; } }
   .tile.tile-16 .tile-inner {
+    color: #800080;
     background: url('../tile-sets/logo/logo16.png');
     background-size: cover;
-    color: #800080; }
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+    font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-16 .tile-inner {
+        font-size: 100%; } }
   .tile.tile-32 .tile-inner {
+    color: #808080;
     background: url('../tile-sets/logo/logo32.png');
     background-size: cover;
-    color: #808080; }
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+    font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-32 .tile-inner {
+        font-size: 100%; } }
   .tile.tile-64 .tile-inner {
+    color: #a52a2a;
     background: url('../tile-sets/logo/logo64.png');
     background-size: cover;
-    color: #a52a2a; }
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+    font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-64 .tile-inner {
+        font-size: 100%; } }
   .tile.tile-128 .tile-inner {
+    color: #ff0000;
     background: url('../tile-sets/logo/logo128.png');
     background-size: cover;
-    color: #ff0000;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 100%; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 100%; } }
   .tile.tile-256 .tile-inner {
+    color: #ffa500;
     background: url('../tile-sets/logo/logo256.png');
     background-size: cover;
-    color: #ffa500;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 100%; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 100%; } }
   .tile.tile-512 .tile-inner {
+    color: #ffc0cb;
     background: url('../tile-sets/logo/logo512.png');
     background-size: cover;
-    color: #ffc0cb;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 100%; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 100%; } }
   .tile.tile-1024 .tile-inner {
+    color: #ffff00;
     background: url('../tile-sets/logo/logo1024.png');
     background-size: cover;
-    color: #ffff00;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 100%; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 100%; } }
   .tile.tile-2048 .tile-inner {
+    color: #ffffff;
     background: url('../tile-sets/logo/logo2048.png');
     background-size: cover;
-    color: #ffffff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 100%; }
     @media screen and (max-width: 520px) {
@@ -535,6 +566,28 @@ hr {
   display: block;
   clear: both; }
 
+.share-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right; }
+
+.donate-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right; }
+
 .info-button {
   display: inline-block;
   background: #8f7a66;
@@ -588,15 +641,29 @@ hr {
   .heading {
     margin-bottom: 10px; }
 
+  .share-button {
+    width: 25%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }
+
+  .donate-button {
+    width: 25%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }
+
   .info-button {
-    width: 42%;
+    width: 25%;
     padding: 0;
     display: block;
     box-sizing: border-box;
     margin-top: 2px; }
 
   .restart-button {
-    width: 42%;
+    width: 25%;
     padding: 0;
     display: block;
     box-sizing: border-box;
@@ -653,8 +720,8 @@ hr {
         padding: 0 20px;
         text-decoration: none;
         color: #f9f6f2;
-        height: 40px;
-        line-height: 42px;
+        height: 20px;
+        line-height: 22px;
         margin-left: 9px; }
         .game-container .game-message a.keep-playing-button {
           display: none; }
@@ -779,6 +846,6 @@ hr {
     font-size: 30px !important;
     height: 30px !important;
     line-height: 30px !important;
-    margin-top: 90px !important; }
+    margin-top: 0px !important; }
   .game-message .lower {
-    margin-top: 30px !important; } }
+    margin-top: 25px !important; } }
