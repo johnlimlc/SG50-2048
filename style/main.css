@@ -570,10 +570,10 @@ hr {
   display: inline-block;
   background: #8f7a66;
   border-radius: 3px;
-  padding: 0 5px;
+  padding: 0 20px;
   text-decoration: none;
   color: #f9f6f2;
-  height: 50px;
+  height: 40px;
   line-height: 42px;
   display: block;
   text-align: center;
@@ -583,12 +583,21 @@ hr {
   display: inline-block;
   background: #8f7a66;
   border-radius: 3px;
-  padding: 0 5px;
+  padding: 0 20px;
   text-decoration: none;
   color: #f9f6f2;
-  height: 50px;
+  height: 40px;
   line-height: 42px;
   display: block;
+  text-align: center;
+  float: right; }
+
+.like-button {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 42px;
   text-align: center;
   float: right; }
 
@@ -596,16 +605,7 @@ hr {
   display: inline-block;
   border-radius: 3px;
   text-decoration: none;
-  height: 50px;
-  line-height: 42px;
-  text-align: center;
-  float: left; }
-
-.like-button {
-  display: inline-block;
-  border-radius: 3px;
-  text-decoration: none;
-  height: 50px;
+  height: 40px;
   line-height: 42px;
   text-align: center;
   float: left; }
@@ -638,20 +638,13 @@ hr {
     margin-bottom: 10px; }
 
   .info-button {
-    width: 30%;
+    width: 20%;
     padding: 0;
     display: block;
     box-sizing: border-box;
     margin-top: 2px; }
 
   .restart-button {
-    width: 30%;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
-
-  .share-button {
     width: 20%;
     padding: 0;
     display: block;
@@ -659,6 +652,13 @@ hr {
     margin-top: 2px; }
 
   .like-button {
+    width: 30%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }
+
+  .share-button {
     width: 20%;
     padding: 0;
     display: block;
