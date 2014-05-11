@@ -573,7 +573,7 @@ hr {
   height: 40px;
   line-height: 42px;
   text-align: center;
-  float: left; }
+  float: right; }
 
 .info-button {
   display: inline-block;
