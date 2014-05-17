@@ -577,7 +577,8 @@ hr {
 
 .info-button {
   display: inline-block;
-  background: #8f7a66;
+  background: url('../tile-sets/info.png');
+  background-size: cover;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -588,18 +589,10 @@ hr {
   text-align: center;
   float: right; }
 
-.donate-button {
-  display: inline-block;
-  border-radius: 3px;
-  text-decoration: none;
-  height: 40px;
-  line-height: 42px;
-  text-align: center;
-  float: right; }
-
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: url('../tile-sets/restart.png');
+  background-size: cover;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -647,7 +640,7 @@ hr {
     margin-bottom: 10px; }
 
   .like-button {
-    width: 20%;
+    width: 35%;
     padding: 0;
     display: block;
     box-sizing: border-box;
@@ -655,13 +648,6 @@ hr {
 
   .info-button {
     width: 15%;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
-
-  .donate-button {
-    width: 20%;
     padding: 0;
     display: block;
     box-sizing: border-box;
@@ -675,7 +661,7 @@ hr {
     margin-top: 2px; }
 
   .share-button {
-    width: 30%;
+    width: 35%;
     padding: 0;
     display: block;
     box-sizing: border-box;
