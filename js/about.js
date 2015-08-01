@@ -3,7 +3,7 @@ var sequence = [
 
     {
         content: 'Enhanced by<a href="http://www.facebook.com/johnlimlc" target="_blank">John Lim</a>'+
-        '<br>Specially for <a href="http://changcheng.com.sg" target="_blank">長城集团 Chang Cheng Group</a><br>'+
+        '<br>Specially for <a href="http://www.singapore50.sg" target="_blank">SG50</a><br>'+
         '<br><small>Inspired by <a href="http://gabrielecirulli.com" target="_blank">2048 by Gabriele Cirulli</a>'+
         '<br>& based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a>'+
         '<br>& similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer</a></small>',
@@ -52,7 +52,7 @@ var sequence = [
 
     {
         container: '#instructions',
-        content: 'When two tiles with the same number touch',
+        content: 'When two tiles with the same picture touch',
         css: { left: '0px', top: '90px', opacity: 0 },
         animate: { opacity: 1 },
         duration: 1200,
@@ -70,7 +70,7 @@ var sequence = [
 
     {
         container: '#instructions',
-        content: 'Join the numbers and get to the <big>2048</big> tile!',
+        content: 'Join the pictures and get to the <big>SG50</big> tile!',
         css: { left: '0px', top: '156px', opacity: 0 },
         animate: { opacity: 1 },
         duration: 1200,
@@ -111,7 +111,7 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: 'Once you have achieved the magic number <big>2048</big>',
+        content: 'Once you have achieved the magic picture <big>SG50</big>',
         css: { left: '-150px', top: '22px', color: '#f5510a' },
         animate: { left: 0 },
         duration: 900,
@@ -129,7 +129,7 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: 'And post a message with your contact on our',
+        content: 'And post a message with your picture on our',
         css: { left: '-150px', top: '90px', color: '#0050ff' },
         animate: { left: 0 },
         duration: 900,
@@ -138,7 +138,7 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: '<a href="http://www.facebook.com/changcheng.sg" target="_blank">facebook</a>',
+        content: '<a href="http://www.facebook.com/sg2015" target="_blank">facebook</a>',
         css: { left: '-150px', top: '110px', color: '#0050ff' },
         animate: { left: 0 },
         duration: 900,
@@ -147,7 +147,7 @@ var sequence = [
 
     {
         container: '#achievements',
-        content: 'And we will send you a mystery gift!',
+        content: 'And share your achievement with fellow Singaporeans!',
         css: { left: '180px', top: '154px', color: '#f00f0f' },
         animate: { left: 0 },
         duration: 900,
